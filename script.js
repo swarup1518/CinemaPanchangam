@@ -90,3 +90,60 @@ function switchTab(tabName) {
   // Add active class to clicked tab
   event.target.classList.add('active');
 }
+
+// BiggBoss Carousel Scroll Functionality
+function scrollBiggBoss(direction) {
+  const carousel = document.getElementById('biggbossCarousel');
+  const cardWidth = 250 + 20; // card width + gap
+  const scrollAmount = cardWidth * 3; // Scroll 3 cards at a time
+  
+  if (direction === 'left') {
+    carousel.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  } else {
+    carousel.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+}
+
+// Optional: Auto-scroll BiggBoss carousel
+let biggbossAutoScroll;
+function startBiggBossAutoScroll() {
+  biggbossAutoScroll = setInterval(() => {
+    const carousel = document.getElementById('biggbossCarousel');
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    
+    if (carousel.scrollLeft >= maxScroll) {
+      // Reset to beginning
+      carousel.scrollTo({
+        left: 0,
+        behavior: 'smooth'
+      });
+    } else {
+      scrollBiggBoss('right');
+    }
+  }, 5000); // Auto-scroll every 5 seconds
+}
+
+function stopBiggBossAutoScroll() {
+  clearInterval(biggbossAutoScroll);
+}
+
+// Start auto-scroll when page loads (optional)
+// Uncomment the lines below to enable auto-scroll
+// window.addEventListener('DOMContentLoaded', () => {
+//   startBiggBossAutoScroll();
+// });
+
+// Pause auto-scroll on hover
+document.addEventListener('DOMContentLoaded', () => {
+  const biggbossSection = document.querySelector('.biggboss-carousel-section');
+  if (biggbossSection) {
+    biggbossSection.addEventListener('mouseenter', stopBiggBossAutoScroll);
+    biggbossSection.addEventListener('mouseleave', startBiggBossAutoScroll);
+  }
+});
