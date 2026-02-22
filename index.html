@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinema Panchangam - Telugu Movie News & Entertainment</title>
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <span><i class="fas fa-calendar-alt"></i> Thursday, February 20, 2026</span>
+    <span><i class="fas fa-envelope"></i> contact@cinemapanchangam.com</span>
+  </div>
+  <div class="top-bar-right">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+    </div>
+    <select class="language-selector" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="te">తెలుగు (Telugu)</option>
+      <option value="hi">हिंदी (Hindi)</option>
+      <option value="ta">தமிழ் (Tamil)</option>
+    </select>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+      <i class="fas fa-moon"></i> Dark Mode
+    </button>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <i class="fas fa-film"></i>
+    Cinema <span>Panchangam</span>
+  </div>
+  <div class="header-right">
+    <div class="search-bar">
+      <input type="text" placeholder="Search movies, actors, news...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <nav>
+      <a href="#"><i class="fas fa-info-circle"></i> About</a>
+      <a href="#"><i class="fas fa-phone"></i> Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- BREAKING NEWS TICKER -->
+<div class="breaking-news">
+  <div class="breaking-label"><i class="fas fa-bolt"></i> BREAKING</div>
+  <div class="news-ticker">
+    <div class="ticker-content">
+      <span class="ticker-item">🔥 Pushpa 2 breaks all records with massive opening</span>
+      <span class="ticker-item">⭐ Game Changer gets U/A certificate from censor board</span>
+      <span class="ticker-item">🎬 Devara shooting wrapped up, post-production in progress</span>
+      <span class="ticker-item">💰 Box Office: Weekend collections cross 200 crores</span>
+      <span class="ticker-item">🎭 New movie announcement from top director</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="ticker-item">🔥 Pushpa 2 breaks all records with massive opening</span>
+      <span class="ticker-item">⭐ Game Changer gets U/A certificate from censor board</span>
+      <span class="ticker-item">🎬 Devara shooting wrapped up, post-production in progress</span>
+    </div>
+  </div>
+</div>
+
+<!-- MENU BAR -->
+<div class="menu">
+  <a href="#"><i class="fas fa-home"></i> Home</a>
+  <a href="#"><i class="fas fa-newspaper"></i> Movie News</a>
+  <a href="#"><i class="fas fa-star"></i> Reviews</a>
+  <a href="#"><i class="fas fa-play-circle"></i> Trailers</a>
+  <a href="#"><i class="fas fa-images"></i> Gallery</a>
+  <a href="#"><i class="fas fa-image"></i> Posters</a>
+  <a href="#"><i class="fas fa-video"></i> Videos</a>
+  <a href="#"><i class="fas fa-tv"></i> OTT</a>
+  <a href="#"><i class="fas fa-ticket-alt"></i> Box Office</a>
+  <a href="#"><i class="fas fa-microphone"></i> Interviews</a>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <i class="fas fa-home"></i> <a href="#">Home</a> / <span>Telugu Cinema News</span>
+</div>
+
+<div class="container">
+
+  <!-- TOP HEADLINES -->
+  <div class="top-headlines">
+    <h2><i class="fas fa-fire"></i> Top Headlines</h2>
+    <div class="headlines-grid">
+      <div class="headline-main">
+        <img src="images/Game Changer.jpg">
+        <div class="headline-overlay">
+          <h3>Game Changer: Ram Charan's Biggest Release Gets Record Pre-Sales</h3>
+          <p><i class="far fa-clock"></i> 2 hours ago</p>
+        </div>
+      </div>
+      <div class="headline-side">
+        <div class="headline-small">
+          <img src="images/Pushpa 2.jpg">
+          <div>
+            <h4>Pushpa 2 Worldwide Collections Update</h4>
+            <p style="font-size: 11px; opacity: 0.8;"><i class="far fa-clock"></i> 3 hours ago</p>
+          </div>
+        </div>
+        <div class="headline-small">
+          <img src="images/Devara.jpg">
+          <div>
+            <h4>Devara OTT Release Date Announced</h4>
+            <p style="font-size: 11px; opacity: 0.8;"><i class="far fa-clock"></i> 5 hours ago</p>
+          </div>
+        </div>
+        <div class="headline-small">
+          <img src="images/Blockbuster Director.jpg">
+          <div>
+            <h4>Blockbuster Director Signs New Film</h4>
+            <p style="font-size: 11px; opacity: 0.8;"><i class="far fa-clock"></i> 6 hours ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="headline-side">
+        <div class="headline-small">
+          <img src="images/Star Hero's Birthday Celebrations.jpg">
+          <div>
+            <h4>Star Hero's Birthday Celebrations</h4>
+            <p style="font-size: 11px; opacity: 0.8;"><i class="far fa-clock"></i> 7 hours ago</p>
+          </div>
+        </div>
+        <div class="headline-small">
+          <img src="images/New Movie Launch Event Photos.jpg">
+          <div>
+            <h4>New Movie Launch Event Photos</h4>
+            <p style="font-size: 11px; opacity: 0.8;"><i class="far fa-clock"></i> 8 hours ago</p>
+          </div>
+        </div>
+        <div class="headline-small">
+          <img src="images/Audio Launch Creates Sensation.jpg">
+          <div>
+            <h4>Audio Launch Creates Sensation</h4>
+            <p style="font-size: 11px; opacity: 0.8;"><i class="far fa-clock"></i> 9 hours ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- TRENDING SECTION -->
+  <div class="trending-section">
+    <div class="trending-header">
+      <i class="fas fa-fire"></i>
+      <h3>Trending Now</h3>
+    </div>
+    <div class="trending-tags">
+      <div class="tag">#Pushpa2Collections</div>
+      <div class="tag">#GameChangerUpdate</div>
+      <div class="tag">#DevaraOTT</div>
+      <div class="tag">#SalaarReview</div>
+      <div class="tag">#RRRSuccess</div>
+      <div class="tag">#BaahubaliRecords</div>
+      <div class="tag">#TollywoodNews</div>
+      <div class="tag">#AlluArjun</div>
+      <div class="tag">#RamCharan</div>
+      <div class="tag">#JrNTR</div>
+      <div class="tag">#MaheshBabu</div>
+      <div class="tag">#PrabhasNextMovie</div>
+      <div class="tag">#VijayDeverakonda</div>
+      <div class="tag">#RashmikaMandanna</div>
+      <div class="tag">#SamanthaLatest</div>
+    </div>
+  </div>
+  
+  <!-- TOP GRID - FILM NEWS, REVIEWS, GALLERY -->
+  <div class="grid-3">
+
+    <div class="section">
+      <h3 class="section-title" style="background: linear-gradient(135deg, #E31E24, #8B0000); color: white; margin: -20px -20px 15px -20px; padding: 15px 20px; border-left: none; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+        <i class="fas fa-newspaper"></i> FILM NEWS
+      </h3>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Dharachar.gif" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Dhurandhar 2 Gets Censor Certificate, Makers Plan Big...</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-clock"></i> 2h ago</span>
+            <span><i class="far fa-eye"></i> 1.2K</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Ram Charan.gif" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Ram Charan's Manager's Son to Debut as Hero in Mad 3?</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-clock"></i> 4h ago</span>
+            <span><i class="far fa-eye"></i> 850</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/viswaksen.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">"I Won't Interfere At All!" – Vishwak Sen's Strong Stand</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-clock"></i> 5h ago</span>
+            <span><i class="far fa-eye"></i> 1.5K</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Fans Feeling Cry.gif" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Fans Fuming On Anirudh Concert For High Ticket Prices</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-clock"></i> 6h ago</span>
+            <span><i class="far fa-eye"></i> 2.5K</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="test.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Buzz: Anchor's Extra Promotions Are Helping The Film</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-clock"></i> 7h ago</span>
+            <span><i class="far fa-eye"></i> 980</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Tollywood heroes.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Most Consistent Heroes Of Tollywood- Deets Inside</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-clock"></i> 8h ago</span>
+            <span><i class="far fa-eye"></i> 1.8K</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Nawab Cafe.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Nawab Cafe USA Premieres TODAY</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-clock"></i> 9h ago</span>
+            <span><i class="far fa-eye"></i> 3.1K</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/All Eyes On OG.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">All Eyes On #OG Anchors Massive Comeback</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-clock"></i> 10h ago</span>
+            <span><i class="far fa-eye"></i> 2.2K</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/UBS AURA Single Promo.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">UBS AURA Single Promo: Goosebumps Galore</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-clock"></i> 11h ago</span>
+            <span><i class="far fa-eye"></i> 1.6K</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 0; margin-bottom: 0; border-bottom: none;">
+        <img src="images/New Movie Announcement from Top Director.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">New Movie Announcement from Top Director</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-clock"></i> 12h ago</span>
+            <span><i class="far fa-eye"></i> 2.8K</span>
+          </div>
+        </div>
+      </div>
+      <a href="#" style="display: block; background: #f0f0f0; text-align: center; padding: 12px; margin: 15px -20px -20px -20px; text-decoration: none; color: var(--primary-red); font-weight: 600; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; transition: 0.3s;" onmouseover="this.style.background='var(--primary-red)'; this.style.color='white';" onmouseout="this.style.background='#f0f0f0'; this.style.color='var(--primary-red)';">
+        <i class="fas fa-arrow-right"></i> View All
+      </a>
+    </div>
+
+    <div class="section">
+      <h3 class="section-title" style="background: linear-gradient(135deg, #C41E3A, #8B0000); color: white; margin: -20px -20px 15px -20px; padding: 15px 20px; border-left: none; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+        <i class="fas fa-star"></i> REVIEWS
+      </h3>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Hey Bhagawan.png" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Hey Balwanth Review</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.5/5</span>
+            <span><i class="far fa-comment"></i> 45</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Couple Friendly.png" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Couple Friendly Movie Review</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.8/5</span>
+            <span><i class="far fa-comment"></i> 120</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Euphoria.png" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Euphoria Movie Review </div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 3.5/5</span>
+            <span><i class="far fa-comment"></i> 67</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Nilave.png" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Nilave Movie Review</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.2/5</span>
+            <span><i class="far fa-comment"></i> 89</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Funky.png" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Funky Movie Review</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.0/5</span>
+            <span><i class="far fa-comment"></i> 156</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Withlove review.png" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">With Love Movie Review</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 3.8/5</span>
+            <span><i class="far fa-comment"></i> 234</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Honey.png" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Honey Movie Review</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.6/5</span>
+            <span><i class="far fa-comment"></i> 98</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Om Shanti Shanti Shanti.png" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Om Shanti Shanti Shanti Movie Review</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 3.9/5</span>
+            <span><i class="far fa-comment"></i> 78</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Nari Nari Naduma Murari.png" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Nari Nari Naduma Murari Movie Review</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.1/5</span>
+            <span><i class="far fa-comment"></i> 52</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 0; margin-bottom: 0; border-bottom: none;">
+        <img src="images/Anaganaga Oka Raju.png" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Anaganaga Oka Raju Movie Review</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.3/5</span>
+            <span><i class="far fa-comment"></i> 145</span>
+          </div>
+        </div>
+      </div>
+      <a href="#" style="display: block; background: #f0f0f0; text-align: center; padding: 12px; margin: 15px -20px -20px -20px; text-decoration: none; color: var(--primary-red); font-weight: 600; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; transition: 0.3s;" onmouseover="this.style.background='var(--primary-red)'; this.style.color='white';" onmouseout="this.style.background='#f0f0f0'; this.style.color='var(--primary-red)';">
+        <i class="fas fa-arrow-right"></i> View All
+      </a>
+    </div>
+
+    <div class="section">
+      <h3 class="section-title" style="background: linear-gradient(135deg, #8B0000, #5A0000); color: white; margin: -20px -20px 15px -20px; padding: 15px 20px; border-left: none; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+        <i class="fas fa-images"></i> GALLERY
+      </h3>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/New Poster of Toxic.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">New Poster of Toxic </div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-images"></i> 25</span>
+            <span><i class="far fa-heart"></i> 345</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Divi Vadthya latest Stills.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Divi Vadthya latest Stills</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-images"></i> 18</span>
+            <span><i class="far fa-heart"></i> 289</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/First look posters of Viduthalai Part 2.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">First look posters of Viduthalai Part 2 </div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-images"></i> 32</span>
+            <span><i class="far fa-heart"></i> 567</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Nani in the raw new poster of The Paradise.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;"> Nani in the raw new poster of The Paradise</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-images"></i> 40</span>
+            <span><i class="far fa-heart"></i> 678</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Rasha Thadanis Vibrant Look Poster from Srinivasa Mangapuram Released.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Rasha Thadani's Vibrant Look Poster from Srinivasa Mangapuram Released</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-images"></i> 28</span>
+            <span><i class="far fa-heart"></i> 421</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Motion poster & first look of Priyadarshis Premante unveiled.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Motion poster & first look of Priyadarshi's Premante unveiled</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-images"></i> 35</span>
+            <span><i class="far fa-heart"></i> 512</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Priya Bhavani Shankar.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Priya Bhavani Shankar Latest Stills</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-images"></i> 22</span>
+            <span><i class="far fa-heart"></i> 398</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Ritika Nayak Glamourous Collection.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Ritika Nayak Glamourous Collection</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-images"></i> 45</span>
+            <span><i class="far fa-heart"></i> 823</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+        <img src="images/Ravi Teja unveils Maremmas powerful first look.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Ravi Teja unveils Maremma's powerful first look</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-images"></i> 38</span>
+            <span><i class="far fa-heart"></i> 654</span>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="gap: 10px; padding-bottom: 0; margin-bottom: 0; border-bottom: none;">
+        <img src="images/Nagabandham Rana unveils Virat Karrnas rugged first look poster.jpg" style="width: 60px; height: 60px;">
+        <div class="item-content">
+          <div class="item-text" style="font-size: 13px; line-height: 1.3;">Nagabandham Rana unveils Virat Karrna's rugged first look poster</div>
+          <div class="item-meta" style="font-size: 10px;">
+            <span><i class="far fa-images"></i> 50</span>
+            <span><i class="far fa-heart"></i> 945</span>
+          </div>
+        </div>
+      </div>
+      <a href="#" style="display: block; background: #f0f0f0; text-align: center; padding: 12px; margin: 15px -20px -20px -20px; text-decoration: none; color: var(--primary-red); font-weight: 600; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; transition: 0.3s;" onmouseover="this.style.background='var(--primary-red)'; this.style.color='white';" onmouseout="this.style.background='#f0f0f0'; this.style.color='var(--primary-red)';">
+        <i class="fas fa-arrow-right"></i> View All
+      </a>
+    </div>
+
+  </div>
+
+  <!-- AD BANNER WITH ACTRESS SLIDER -->
+  <div class="ad-banner" style="background: linear-gradient(135deg, #FFD700, #FFA500); padding: 30px 40px; overflow: hidden;">
+    <h3 style="text-align: center; margin-bottom: 20px; font-size: 28px; color: #1a1a1a;">
+      🎬 Google Ad Space - Show Your Brand Here
+    </h3>
+  </div>
+
+  <div class="actress-slider-container">
+    <div class="slider-arrow left" onclick="moveSlider('left')">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+    <div class="actress-slider">
+      <!-- Actress slides -->
+      <div class="actress-slide">
+        <img src="images/actress1.jpg" alt="Samantha Ruth Prabhu">
+        <div class="actress-name">Samantha Ruth Prabhu</div>
+      </div>
+      <div class="actress-slide">
+        <img src="images/actress2.jpeg" alt="Rashmika Mandanna">
+        <div class="actress-name">Rashmika Mandanna</div>
+      </div>
+      <div class="actress-slide">
+        <img src="images/actress3.jpg" alt="Pooja Hegde">
+        <div class="actress-name">Pooja Hegde</div>
+      </div>
+      <div class="actress-slide">
+        <img src="images/actress4.jpg" alt="Kajal Aggarwal">
+        <div class="actress-name">Kajal Aggarwal</div>
+      </div>
+      <div class="actress-slide">
+        <img src="images/actress5.jpg" alt="Tamannaah Bhatia">
+        <div class="actress-name">Tamannaah Bhatia</div>
+      </div>
+      <div class="actress-slide">
+        <img src="images/actress6+.jpeg" alt="Shruti Haasan">
+        <div class="actress-name">Shruti Haasan</div>
+      </div>
+      <div class="actress-slide">
+        <img src="images/actress7.jpg" alt="Anushka Shetty">
+        <div class="actress-name">Anushka Shetty</div>
+      </div>
+      <div class="actress-slide">
+        <img src="images/actress8.jpg" alt="Keerthy Suresh">
+        <div class="actress-name">Keerthy Suresh</div>
+      </div>
+      <div class="actress-slide">
+        <img src="images/actress9.jpeg" alt="Sai Pallavi">
+        <div class="actress-name">Sai Pallavi</div>
+      </div>
+      <div class="actress-slide">
+        <img src="images/actress10.jpeg" alt="Sreeleela">
+        <div class="actress-name">Sreeleela</div>
+      </div>
+    </div>
+    <div class="slider-arrow right" onclick="moveSlider('right')">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
+
+  <!-- CINEMA PANCHANGAM REVIEWS - YOUTUBE SECTION -->
+  <section class="youtube-reviews-section">
+    <div class="youtube-reviews-container">
+      <div class="youtube-reviews-header">
+        <h2 class="youtube-reviews-title">
+          <i class="fab fa-youtube"></i>
+          CINEMA PANCHANGAM REVIEWS
+        </h2>
+        <a href="https://www.youtube.com/@CinemaPanchangam" target="_blank" class="youtube-read-more">
+          READ MORE <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="youtube-videos-wrapper">
+        <div class="youtube-featured-row">
+          <!-- Featured Video 1 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Hey Bhagawan.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">TRAILER</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Emotional 'Daughter of Prasad Rao' trailer</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>28K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>2 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Video 2 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Couple Friendly.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">TEASER</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Sri Vishnu.. Vishnu Vinyasa teaser</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>45K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>3 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="youtube-small-row">
+          <!-- Small Video 1 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Euphoria.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">STORY</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">The trailer of 'The Karma' Story 2' is interesting</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>32K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>4 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Video 2 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Nilave.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">SONG</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Chinna Arjun.. Jango song on Shivaratri.. Shivangi.. Om Bheem</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>52K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>5 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Video 3 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Funky.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">TRAILER</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Om Bash Bhashi Song.. If Shankar.. Shivangi.. Om Bheem</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>38K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>6 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Video 4 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Withlove review.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">REVIEW</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Vijayawada Varasatham - If Mahidhar of teaser is in this trailer</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>41K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Video 5 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Honey.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">GLIMPSE</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Valentine's Day- Vijay Naresh's second glimpse of 'Naresh'</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>35K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERVIEWS & CELEBRITY NEWS & BOX OFFICE -->
+  <div class="grid-3">
+    <div class="section">
+      <h3 class="section-title" style="background: linear-gradient(135deg, #FF6B6B, #C92A2A); color: white; margin: -20px -20px 15px -20px; padding: 15px 20px; border-left: none; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+        <i class="fas fa-microphone"></i> Press Notes
+      </h3>
+      <div style="padding: 0;">
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Exclusive: Director Talks About Upcoming Project</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Hero Shares Experience Working on Action Sequences</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Actress Talks About Her Character in New Film</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Music Director Reveals Album Details</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Producer Discusses Future Projects</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Cinematographer Explains Visual Style</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Lyricist Talks About Hit Songs</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Choreographer Reveals Dance Secrets</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Editor Shares Post-Production Insights</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: none; transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Stunt Master Discusses Action Choreography</div>
+        </div>
+      </div>
+      <a href="#" style="display: block; background: linear-gradient(135deg, #FF6B6B, #C92A2A); text-align: center; padding: 12px; margin: 15px -20px -20px -20px; text-decoration: none; color: white; font-weight: 600; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; transition: 0.3s;" onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';">
+        View All →
+      </a>
+    </div>
+
+    <div class="section">
+      <h3 class="section-title" style="background: linear-gradient(135deg, #4ECDC4, #1A7F7A); color: white; margin: -20px -20px 15px -20px; padding: 15px 20px; border-left: none; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+        <i class="fas fa-users"></i> Interviews
+      </h3>
+      <div style="padding: 0;">
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Star Hero Birthday Celebrations Photos</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Actress Spotted at Airport in Stylish Outfit</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Celebrity Wedding: Inside Pictures</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Star Family Vacation Photos Go Viral</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Actor Launches New Restaurant in City</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Celebrity Couple Spotted on Dinner Date</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Hero Donates to Charity Event</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Actress Launches Fashion Brand</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Star Kid Makes Social Media Debut</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: none; transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Celebrity Fitness Transformation Goes Viral</div>
+        </div>
+      </div>
+      <a href="#" style="display: block; background: linear-gradient(135deg, #4ECDC4, #1A7F7A); text-align: center; padding: 12px; margin: 15px -20px -20px -20px; text-decoration: none; color: white; font-weight: 600; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; transition: 0.3s;" onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';">
+        View All →
+      </a>
+    </div>
+
+    <div class="section">
+      <h3 class="section-title" style="background: linear-gradient(135deg, #FF9500, #CC7700); color: white; margin: -20px -20px 15px -20px; padding: 15px 20px; border-left: none; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+        <i class="fas fa-ticket-alt"></i> OTT News
+      </h3>
+      <div style="padding: 0;">
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Weekend Collections: Top 5 Movies</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Blockbuster Crosses 100 Crores Milestone</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Overseas Collections Report</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Day 1 Collections: Record Breaking Opening</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Week 1 Total Collections Update</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">USA Box Office: Telugu Movies Performance</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">All-Time Top Grossers List Updated</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Pre-Release Business Details Revealed</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border-color); transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Break-Even Target Analysis</div>
+        </div>
+        <div style="padding: 12px 0; border-bottom: none; transition: 0.3s;" onmouseover="this.style.background='#f8f9fa'; this.style.paddingLeft='10px';" onmouseout="this.style.background=''; this.style.paddingLeft='0';">
+          <div style="font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px;">Theatrical Rights Sold: Region-Wise</div>
+        </div>
+      </div>
+      <a href="#" style="display: block; background: linear-gradient(135deg, #FF9500, #CC7700); text-align: center; padding: 12px; margin: 15px -20px -20px -20px; text-decoration: none; color: white; font-weight: 600; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; transition: 0.3s;" onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';">
+        View All →
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- CONTENT WITH SIDEBAR: TWO-COLUMN LAYOUT (TRAILERS + POSTERS LEFT, RELEASES RIGHT) -->
+<div class="content-with-sidebar-wrapper">
+  
+  <!-- LEFT COLUMN: TRAILERS + HD POSTERS -->
+  <div class="main-content-column">
+    
+    <!-- TRAILERS & TEASERS SECTION -->
+    <section class="trailers-section">
+      <div class="trailers-container">
+        <div class="trailers-header">
+          <h2 class="trailers-title">TRAILERS - TEASERS</h2>
+          <a href="#" class="trailers-read-more">READ MORE</a>
+        </div>
+
+        <div class="trailers-grid">
+          <!-- Trailer 1 -->
+          <div class="trailer-card">
+            <div class="trailer-thumbnail">
+              <img src="images/blueprint.png" alt="Napoleon Returns Trailer">
+              <div class="trailer-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="trailer-badge">TEASER</div>
+              <div class="trailer-info">
+                <div class="trailer-title">Napoleon Returns: Then a shadow, not a buffalo</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trailer 2 -->
+          <div class="trailer-card">
+            <div class="trailer-thumbnail">
+              <img src="images/New Movie Announcement from Top Director.jpg" alt="Film Chamber Issue">
+              <div class="trailer-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="trailer-badge">TRAILER</div>
+              <div class="trailer-info">
+                <div class="trailer-title">Film Chamber Issue: Lollu in the Film Chamber.. What'd</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trailer 3 -->
+          <div class="trailer-card">
+            <div class="trailer-thumbnail">
+              <img src="images/Couple Friendly.png" alt="XY: XY' CV Kumar's Another Experiment">
+              <div class="trailer-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="trailer-badge">TEASER</div>
+              <div class="trailer-info">
+                <div class="trailer-title">XY: XY' CV Kumar's Another Experiment</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trailer 4 -->
+          <div class="trailer-card">
+            <div class="trailer-thumbnail">
+              <img src="images/Euphoria.png" alt="Kantara Chapter 1">
+              <div class="trailer-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="trailer-badge">SONG</div>
+              <div class="trailer-info">
+                <div class="trailer-title">Kantara Chapter 1: "Raave Ika Priya Bhamini" full song is out</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trailer 5 -->
+          <div class="trailer-card">
+            <div class="trailer-thumbnail">
+              <img src="images/viswaksen.jpg" alt="Aaryan Trailer">
+              <div class="trailer-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="trailer-badge">TRAILER</div>
+              <div class="trailer-info">
+                <div class="trailer-title">Aaryan Trailer: Not even a single life can be taken</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trailer 6 -->
+          <div class="trailer-card">
+            <div class="trailer-thumbnail">
+              <img src="images/Honey.png" alt="Anantapur East Godavari Boy">
+              <div class="trailer-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="trailer-badge">TEASER</div>
+              <div class="trailer-info">
+                <div class="trailer-title">Anantapur East Godavari Boy + West Godavari girl = f</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trailer 7 -->
+          <div class="trailer-card">
+            <div class="trailer-thumbnail">
+              <img src="images/Funky.png" alt="Telugu Koda Trailer">
+              <div class="trailer-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="trailer-badge">TRAILER</div>
+              <div class="trailer-info">
+                <div class="trailer-title">Telugu Koda Trailer: Be careful with people like that</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trailer 8 -->
+          <div class="trailer-card">
+            <div class="trailer-thumbnail">
+              <img src="images/Nilave.png" alt="Kiran Abbavaram: K Ramp">
+              <div class="trailer-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="trailer-badge">SONG</div>
+              <div class="trailer-info">
+                <div class="trailer-title">Kiran Abbavaram: K Ramp third single 'Tikkal Tikkal'</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HD POSTERS SECTION -->
+    <div class="media-portal-layout">
+      <div class="hd-posters-section">
+        <div class="hd-posters-header">HD POSTERS</div>
+        
+        <div class="posters-grid">
+          <!-- Poster 1 -->
+          <div class="poster-card">
+            <img src="images/actress1.jpg" alt="HD Poster" class="poster-image">
+            <div class="poster-camera-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="poster-caption">Have you noticed a new change in</div>
+          </div>
+
+          <!-- Poster 2 -->
+          <div class="poster-card">
+            <img src="images/actress2.jpeg" alt="HD Poster" class="poster-image">
+            <div class="poster-camera-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="poster-caption">The whole city is in harmony...</div>
+          </div>
+
+          <!-- Poster 3 -->
+          <div class="poster-card">
+            <img src="images/actress3.jpg" alt="HD Poster" class="poster-image">
+            <div class="poster-camera-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="poster-caption">She shows her tiny waist and</div>
+          </div>
+
+          <!-- Poster 4 -->
+          <div class="poster-card">
+            <img src="images/actress4.jpg" alt="HD Poster" class="poster-image">
+            <div class="poster-camera-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="poster-caption">K Ramp Beauty.. She walks the</div>
+          </div>
+
+          <!-- Poster 5 -->
+          <div class="poster-card">
+            <img src="images/actress5.jpg" alt="HD Poster" class="poster-image">
+            <div class="poster-camera-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="poster-caption">Rashmika To Nivetha Pethuraj</div>
+          </div>
+
+          <!-- Poster 6 -->
+          <div class="poster-card">
+            <img src="images/actress6+.jpeg" alt="HD Poster" class="poster-image">
+            <div class="poster-camera-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="poster-caption">Rashmika To Nivetha Pethuraj</div>
+          </div>
+
+          <!-- Poster 7 -->
+          <div class="poster-card">
+            <img src="images/actress7.jpg" alt="HD Poster" class="poster-image">
+            <div class="poster-camera-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="poster-caption">From Rashmika to Nivetha Pethuraj</div>
+          </div>
+
+          <!-- Poster 8 -->
+          <div class="poster-card">
+            <img src="images/actress8.jpg" alt="HD Poster" class="poster-image">
+            <div class="poster-camera-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="poster-caption">Anantapur child.. swaying with th</div>
+          </div>
+
+          <!-- Poster 9 -->
+          <div class="poster-card">
+            <img src="images/actress9.jpeg" alt="HD Poster" class="poster-image">
+            <div class="poster-camera-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="poster-caption">The newlywed daughter-in-law..</div>
+          </div>
+
+          <!-- Poster 10 -->
+          <div class="poster-card">
+            <img src="images/actress10.jpeg" alt="HD Poster" class="poster-image">
+            <div class="poster-camera-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="poster-caption">Balayya`s beauty in a bikini.. is</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT COLUMN: UPCOMING RELEASE DATES SIDEBAR -->
+  <div class="release-dates-sidebar">
+    <div class="release-dates-header">
+      <div class="release-dates-title">Upcoming Release Dates</div>
+      <div class="release-tabs">
+        <button class="release-tab active" onclick="switchTab('theatrical')">Theatrical Releases</button>
+        <button class="release-tab" onclick="switchTab('ott')">OTT Releases</button>
+      </div>
+    </div>
+
+    <div class="release-dates-content">
+      <!-- Theatrical Releases Tab -->
+      <div id="theatrical-panel" class="release-tab-panel active">
+        <ul class="release-list">
+          <li class="release-item">
+            <span class="release-movie-name">Hey Balwanth</span>
+            <span class="release-movie-date">Feb 20, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Nawab Cafe</span>
+            <span class="release-movie-date">Feb 20, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Mrithyunjay</span>
+            <span class="release-movie-date">Feb 27, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Vishnu Vinyasam</span>
+            <span class="release-movie-date">Feb 28, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Sathi Leelavathi</span>
+            <span class="release-movie-date">Mar 6, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Sampradayini Suppini Suddapoosani</span>
+            <span class="release-movie-date">Mar 6, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Band Melam</span>
+            <span class="release-movie-date">Mar 13, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Dacoit</span>
+            <span class="release-movie-date">Mar 19, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Dhurandhar 2 (Telugu Dub)</span>
+            <span class="release-movie-date">Mar 19, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Toxic (Telugu Dub)</span>
+            <span class="release-movie-date">Mar 19, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Ustaad Bhagat Singh</span>
+            <span class="release-movie-date">Mar 26, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Biker</span>
+            <span class="release-movie-date">Apr 3, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Raakaasaa</span>
+            <span class="release-movie-date">Apr 3, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Pallichattambi (Telugu Dub)</span>
+            <span class="release-movie-date">Apr 9, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Swayambhu</span>
+            <span class="release-movie-date">Apr 10, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Bhoot Bangla (Hindi)</span>
+            <span class="release-movie-date">Apr 10, 2026</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- OTT Releases Tab -->
+      <div id="ott-panel" class="release-tab-panel">
+        <ul class="release-list">
+          <li class="release-item">
+            <span class="release-movie-name">Couple Friendly</span>
+            <span class="release-movie-date">Feb 21, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Euphoria</span>
+            <span class="release-movie-date">Feb 25, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Nilave</span>
+            <span class="release-movie-date">Mar 1, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Funky</span>
+            <span class="release-movie-date">Mar 5, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">With Love</span>
+            <span class="release-movie-date">Mar 10, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Honey</span>
+            <span class="release-movie-date">Mar 15, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Om Shanti Shanti Shanti</span>
+            <span class="release-movie-date">Mar 20, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Nari Nari Naduma Murari</span>
+            <span class="release-movie-date">Mar 25, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Anaganaga Oka Raju</span>
+            <span class="release-movie-date">Apr 1, 2026</span>
+          </li>
+          <li class="release-item">
+            <span class="release-movie-name">Devara (OTT Premiere)</span>
+            <span class="release-movie-date">Apr 15, 2026</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <a href="#" class="view-calendar-btn">
+      Click Here to View Entire Calendar <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+
+</div>
+
+<div class="container">
+
+  <!-- POLL SECTION -->
+  <div class="poll-section">
+    <h3 class="section-title">
+      <i class="fas fa-poll"></i> POLL OF THE WEEK
+    </h3>
+    <div class="poll-question">Which upcoming movie are you most excited about?</div>
+    <div class="poll-option">
+      <i class="far fa-circle"></i> Game Changer - Ram Charan
+    </div>
+    <div class="poll-option">
+      <i class="far fa-circle"></i> Pushpa 2 - Allu Arjun
+    </div>
+    <div class="poll-option">
+      <i class="far fa-circle"></i> Devara - Jr NTR
+    </div>
+    <div class="poll-option">
+      <i class="far fa-circle"></i> Prabhas Next - Untitled
+    </div>
+    <button class="btn btn-red" style="margin-top: 15px; width: 100%;">
+      <i class="fas fa-check"></i> Submit Vote
+    </button>
+  </div>
+
+  <!-- NEWSLETTER SECTION -->
+  <div class="newsletter">
+    <h3><i class="fas fa-envelope"></i> Subscribe to Our Newsletter</h3>
+    <p>Get the latest Telugu movie news, reviews, and updates delivered to your inbox!</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+    </form>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-top">
+    <div class="footer-section">
+      <h4>About Us</h4>
+      <ul>
+        <li><a href="#">About Cinema Panchangam</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Advertise With Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Movie News</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Box Office</a></li>
+        <li><a href="#">OTT Updates</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Disclaimer</a>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+      <a href="#">Advertise</a>
+    </div>
+    <p>© 2026 Cinema Panchangam - Telugu Movie News & Entertainment Portal</p>
+    <p style="font-size: 12px; margin-top: 10px; opacity: 0.8;">All Rights Reserved | Powered by Cinema Panchangam</p>
+  </div>
+</div>
+
+<!-- BACK TO TOP BUTTON -->
+<div class="back-to-top" id="backToTop" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
