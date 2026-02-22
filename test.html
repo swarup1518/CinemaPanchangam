@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cinema Panchangam - Telugu Movie News & Entertainment</title>
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+<link rel="shortcut icon" href="images/favicon.ico">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -1253,6 +1261,401 @@ nav a:hover {
   color: var(--primary-red);
 }
 
+/* TRAILERS & TEASERS SECTION */
+.trailers-section {
+  background: #000000;
+  padding: 30px 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+.trailers-container {
+  width: 100%;
+}
+
+.trailers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333;
+}
+
+.trailers-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.trailers-read-more {
+  color: var(--primary-red);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.trailers-read-more:hover {
+  color: #FFD700;
+}
+
+.trailers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.trailer-card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.trailer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(227, 30, 36, 0.4);
+}
+
+.trailer-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.trailer-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.trailer-card:hover .trailer-thumbnail img {
+  transform: scale(1.1);
+}
+
+.trailer-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(227, 30, 36, 0.95);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.trailer-card:hover .trailer-play-button {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.trailer-play-button i {
+  color: white;
+  font-size: 20px;
+  margin-left: 3px;
+}
+
+.trailer-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(227, 30, 36, 0.9);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.trailer-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.7));
+  padding: 15px 10px 10px 10px;
+  color: white;
+}
+
+.trailer-title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* HD POSTERS & RELEASE DATES LAYOUT */
+.content-with-sidebar-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 25px;
+  margin: 30px 0;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.main-content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.media-portal-layout {
+  display: block;
+  margin: 0;
+}
+
+/* HD POSTERS SECTION */
+.hd-posters-section {
+  background: var(--bg-white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px var(--shadow);
+}
+
+.hd-posters-header {
+  background: linear-gradient(135deg, #A31C3D, #6B0F23);
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.posters-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  padding: 20px;
+}
+
+.poster-card {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.poster-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.poster-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.poster-camera-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.poster-card:hover .poster-camera-icon {
+  background: var(--primary-red);
+  transform: scale(1.1);
+}
+
+.poster-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  padding: 25px 8px 8px 8px;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* UPCOMING RELEASE DATES SIDEBAR */
+.release-dates-sidebar {
+  background: var(--bg-white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px var(--shadow);
+  height: fit-content;
+}
+
+.release-dates-header {
+  background: linear-gradient(135deg, #1E4B7F, #0D2E52);
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.release-dates-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.release-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.release-tab {
+  flex: 1;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.release-tab.active {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.release-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--primary-red);
+}
+
+.release-tab:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.release-dates-content {
+  padding: 0;
+}
+
+.release-tab-panel {
+  display: none;
+}
+
+.release-tab-panel.active {
+  display: block;
+}
+
+.release-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.release-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border-color);
+  transition: 0.3s;
+}
+
+.release-item:hover {
+  background: #f8f9fa;
+}
+
+.release-item:last-child {
+  border-bottom: none;
+}
+
+.release-movie-name {
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.release-movie-date {
+  color: var(--primary-red);
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.view-calendar-btn {
+  display: block;
+  margin: 15px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #1E4B7F, #0D2E52);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 6px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.view-calendar-btn::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.1);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.view-calendar-btn:hover {
+  background: linear-gradient(135deg, var(--primary-red), #C41E3A);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.view-calendar-btn i {
+  margin-left: 8px;
+}
+
 @media(max-width:768px){
     .grid-3, .grid-4, .grid-5 {
         grid-template-columns: 1fr;
@@ -1293,6 +1696,22 @@ nav a:hover {
     .youtube-small-row .youtube-video-thumbnail {
         height: 200px;
     }
+    
+    .content-with-sidebar-wrapper {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .media-portal-layout {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .trailers-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .posters-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
 }
 </style>
 
@@ -1311,6 +1730,83 @@ function moveSlider(direction) {
     }
 
     slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+// Dark Mode Toggle
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+  const isDark = document.body.classList.contains('dark-mode');
+  localStorage.setItem('darkMode', isDark);
+  
+  const btn = document.querySelector('.dark-mode-toggle');
+  if (isDark) {
+    btn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+  } else {
+    btn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+  }
+}
+
+// Load dark mode preference
+window.addEventListener('DOMContentLoaded', () => {
+  const darkMode = localStorage.getItem('darkMode') === 'true';
+  if (darkMode) {
+    document.body.classList.add('dark-mode');
+    document.querySelector('.dark-mode-toggle').innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+  }
+});
+
+// Language Change
+function changeLanguage(lang) {
+  alert('Language changed to: ' + lang + '\n(Full implementation would load translated content)');
+}
+
+// Back to Top
+window.addEventListener('scroll', () => {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.style.display = 'flex';
+  } else {
+    backToTop.style.display = 'none';
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Poll functionality
+document.querySelectorAll('.poll-option').forEach(option => {
+  option.addEventListener('click', function() {
+    document.querySelectorAll('.poll-option').forEach(opt => {
+      opt.style.background = '';
+      opt.querySelector('i').className = 'far fa-circle';
+    });
+    this.style.background = 'var(--primary-red)';
+    this.style.color = 'white';
+    this.querySelector('i').className = 'fas fa-check-circle';
+  });
+});
+
+// Release Dates Tab Switching
+function switchTab(tabName) {
+  // Hide all tab panels
+  document.querySelectorAll('.release-tab-panel').forEach(panel => {
+    panel.classList.remove('active');
+  });
+  
+  // Remove active class from all tabs
+  document.querySelectorAll('.release-tab').forEach(tab => {
+    tab.classList.remove('active');
+  });
+  
+  // Show selected tab panel
+  document.getElementById(tabName + '-panel').classList.add('active');
+  
+  // Add active class to clicked tab
+  event.target.classList.add('active');
 }
 </script>
 </head>
@@ -2067,12 +2563,376 @@ function moveSlider(direction) {
     </div>
   </section>
 
- 
+  <!-- CONTENT WITH SIDEBAR: TWO-COLUMN LAYOUT (TRAILERS + POSTERS LEFT, RELEASES RIGHT) -->
+  <div class="content-with-sidebar-wrapper">
+    
+    <!-- LEFT COLUMN: TRAILERS + HD POSTERS -->
+    <div class="main-content-column">
+      
+      <!-- TRAILERS & TEASERS SECTION -->
+      <section class="trailers-section">
+        <div class="trailers-container">
+          <div class="trailers-header">
+            <h2 class="trailers-title">TRAILERS - TEASERS</h2>
+            <a href="#" class="trailers-read-more">READ MORE</a>
+          </div>
 
- 
+          <div class="trailers-grid">
+            <!-- Trailer 1 -->
+            <div class="trailer-card">
+              <div class="trailer-thumbnail">
+                <img src="images/blueprint.png" alt="Napoleon Returns Trailer">
+                <div class="trailer-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="trailer-badge">TEASER</div>
+                <div class="trailer-info">
+                  <div class="trailer-title">Napoleon Returns: Then a shadow, not a buffalo</div>
+                </div>
+              </div>
+            </div>
 
-<!-- INTERVIEWS & CELEBRITY NEWS & BOX OFFICE -->
-<div class="grid-3">
+            <!-- Trailer 2 -->
+            <div class="trailer-card">
+              <div class="trailer-thumbnail">
+                <img src="images/New Movie Announcement from Top Director.jpg" alt="Film Chamber Issue">
+                <div class="trailer-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="trailer-badge">TRAILER</div>
+                <div class="trailer-info">
+                  <div class="trailer-title">Film Chamber Issue: Lollu in the Film Chamber.. What'd</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trailer 3 -->
+            <div class="trailer-card">
+              <div class="trailer-thumbnail">
+                <img src="images/Couple Friendly.png" alt="XY: XY' CV Kumar's Another Experiment">
+                <div class="trailer-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="trailer-badge">TEASER</div>
+                <div class="trailer-info">
+                  <div class="trailer-title">XY: XY' CV Kumar's Another Experiment</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trailer 4 -->
+            <div class="trailer-card">
+              <div class="trailer-thumbnail">
+                <img src="images/Euphoria.png" alt="Kantara Chapter 1">
+                <div class="trailer-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="trailer-badge">SONG</div>
+                <div class="trailer-info">
+                  <div class="trailer-title">Kantara Chapter 1: "Raave Ika Priya Bhamini" full song is out</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trailer 5 -->
+            <div class="trailer-card">
+              <div class="trailer-thumbnail">
+                <img src="images/viswaksen.jpg" alt="Aaryan Trailer">
+                <div class="trailer-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="trailer-badge">TRAILER</div>
+                <div class="trailer-info">
+                  <div class="trailer-title">Aaryan Trailer: Not even a single life can be taken</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trailer 6 -->
+            <div class="trailer-card">
+              <div class="trailer-thumbnail">
+                <img src="images/Honey.png" alt="Anantapur East Godavari Boy">
+                <div class="trailer-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="trailer-badge">TEASER</div>
+                <div class="trailer-info">
+                  <div class="trailer-title">Anantapur East Godavari Boy + West Godavari girl = f</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trailer 7 -->
+            <div class="trailer-card">
+              <div class="trailer-thumbnail">
+                <img src="images/Funky.png" alt="Telugu Koda Trailer">
+                <div class="trailer-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="trailer-badge">TRAILER</div>
+                <div class="trailer-info">
+                  <div class="trailer-title">Telugu Koda Trailer: Be careful with people like that</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trailer 8 -->
+            <div class="trailer-card">
+              <div class="trailer-thumbnail">
+                <img src="images/Nilave.png" alt="Kiran Abbavaram: K Ramp">
+                <div class="trailer-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="trailer-badge">SONG</div>
+                <div class="trailer-info">
+                  <div class="trailer-title">Kiran Abbavaram: K Ramp third single 'Tikkal Tikkal'</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HD POSTERS SECTION -->
+      <div class="media-portal-layout">
+        <div class="hd-posters-section">
+          <div class="hd-posters-header">HD POSTERS</div>
+          
+          <div class="posters-grid">
+            <!-- Poster 1 -->
+            <div class="poster-card">
+              <img src="images/actress1.jpg" alt="HD Poster" class="poster-image">
+              <div class="poster-camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="poster-caption">Have you noticed a new change in</div>
+            </div>
+
+            <!-- Poster 2 -->
+            <div class="poster-card">
+              <img src="images/actress2.jpeg" alt="HD Poster" class="poster-image">
+              <div class="poster-camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="poster-caption">The whole city is in harmony...</div>
+            </div>
+
+            <!-- Poster 3 -->
+            <div class="poster-card">
+              <img src="images/actress3.jpg" alt="HD Poster" class="poster-image">
+              <div class="poster-camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="poster-caption">She shows her tiny waist and</div>
+            </div>
+
+            <!-- Poster 4 -->
+            <div class="poster-card">
+              <img src="images/actress4.jpg" alt="HD Poster" class="poster-image">
+              <div class="poster-camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="poster-caption">K Ramp Beauty.. She walks the</div>
+            </div>
+
+            <!-- Poster 5 -->
+            <div class="poster-card">
+              <img src="images/actress5.jpg" alt="HD Poster" class="poster-image">
+              <div class="poster-camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="poster-caption">Rashmika To Nivetha Pethuraj</div>
+            </div>
+
+            <!-- Poster 6 -->
+            <div class="poster-card">
+              <img src="images/actress6+.jpeg" alt="HD Poster" class="poster-image">
+              <div class="poster-camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="poster-caption">Rashmika To Nivetha Pethuraj</div>
+            </div>
+
+            <!-- Poster 7 -->
+            <div class="poster-card">
+              <img src="images/actress7.jpg" alt="HD Poster" class="poster-image">
+              <div class="poster-camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="poster-caption">From Rashmika to Nivetha Pethuraj</div>
+            </div>
+
+            <!-- Poster 8 -->
+            <div class="poster-card">
+              <img src="images/actress8.jpg" alt="HD Poster" class="poster-image">
+              <div class="poster-camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="poster-caption">Anantapur child.. swaying with th</div>
+            </div>
+
+            <!-- Poster 9 -->
+            <div class="poster-card">
+              <img src="images/actress9.jpeg" alt="HD Poster" class="poster-image">
+              <div class="poster-camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="poster-caption">The newlywed daughter-in-law..</div>
+            </div>
+
+            <!-- Poster 10 -->
+            <div class="poster-card">
+              <img src="images/actress10.jpeg" alt="HD Poster" class="poster-image">
+              <div class="poster-camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="poster-caption">Balayya`s beauty in a bikini.. is</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN: UPCOMING RELEASE DATES SIDEBAR -->
+    <div class="release-dates-sidebar">
+      <div class="release-dates-header">
+        <div class="release-dates-title">Upcoming Release Dates</div>
+        <div class="release-tabs">
+          <button class="release-tab active" onclick="switchTab('theatrical')">Theatrical Releases</button>
+          <button class="release-tab" onclick="switchTab('ott')">OTT Releases</button>
+        </div>
+      </div>
+
+      <div class="release-dates-content">
+        <!-- Theatrical Releases Tab -->
+        <div id="theatrical-panel" class="release-tab-panel active">
+          <ul class="release-list">
+            <li class="release-item">
+              <span class="release-movie-name">Hey Balwanth</span>
+              <span class="release-movie-date">Feb 20, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Nawab Cafe</span>
+              <span class="release-movie-date">Feb 20, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Mrithyunjay</span>
+              <span class="release-movie-date">Feb 27, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Vishnu Vinyasam</span>
+              <span class="release-movie-date">Feb 28, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Sathi Leelavathi</span>
+              <span class="release-movie-date">Mar 6, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Sampradayini Suppini Suddapoosani</span>
+              <span class="release-movie-date">Mar 6, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Band Melam</span>
+              <span class="release-movie-date">Mar 13, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Dacoit</span>
+              <span class="release-movie-date">Mar 19, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Dhurandhar 2 (Telugu Dub)</span>
+              <span class="release-movie-date">Mar 19, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Toxic (Telugu Dub)</span>
+              <span class="release-movie-date">Mar 19, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Ustaad Bhagat Singh</span>
+              <span class="release-movie-date">Mar 26, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Biker</span>
+              <span class="release-movie-date">Apr 3, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Raakaasaa</span>
+              <span class="release-movie-date">Apr 3, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Pallichattambi (Telugu Dub)</span>
+              <span class="release-movie-date">Apr 9, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Swayambhu</span>
+              <span class="release-movie-date">Apr 10, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Bhoot Bangla (Hindi)</span>
+              <span class="release-movie-date">Apr 10, 2026</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- OTT Releases Tab -->
+        <div id="ott-panel" class="release-tab-panel">
+          <ul class="release-list">
+            <li class="release-item">
+              <span class="release-movie-name">Couple Friendly</span>
+              <span class="release-movie-date">Feb 21, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Euphoria</span>
+              <span class="release-movie-date">Feb 25, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Nilave</span>
+              <span class="release-movie-date">Mar 1, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Funky</span>
+              <span class="release-movie-date">Mar 5, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">With Love</span>
+              <span class="release-movie-date">Mar 10, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Honey</span>
+              <span class="release-movie-date">Mar 15, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Om Shanti Shanti Shanti</span>
+              <span class="release-movie-date">Mar 20, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Nari Nari Naduma Murari</span>
+              <span class="release-movie-date">Mar 25, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Anaganaga Oka Raju</span>
+              <span class="release-movie-date">Apr 1, 2026</span>
+            </li>
+            <li class="release-item">
+              <span class="release-movie-name">Devara (OTT Premiere)</span>
+              <span class="release-movie-date">Apr 15, 2026</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#" class="view-calendar-btn">
+        Click Here to View Entire Calendar <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+  <!-- INTERVIEWS & CELEBRITY NEWS & BOX OFFICE -->
+  <div class="grid-3">
     <div class="section">
       <h3 class="section-title" style="background: linear-gradient(135deg, #FF6B6B, #C92A2A); color: white; margin: -20px -20px 15px -20px; padding: 15px 20px; border-left: none; border-top-left-radius: 8px; border-top-right-radius: 8px;">
         <i class="fas fa-microphone"></i> Press Notes
@@ -2528,66 +3388,6 @@ function moveSlider(direction) {
 <div class="back-to-top" id="backToTop" onclick="scrollToTop()">
   <i class="fas fa-arrow-up"></i>
 </div>
-
-<script>
-// Dark Mode Toggle
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-  const isDark = document.body.classList.contains('dark-mode');
-  localStorage.setItem('darkMode', isDark);
-  
-  const btn = document.querySelector('.dark-mode-toggle');
-  if (isDark) {
-    btn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-  } else {
-    btn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
-  }
-}
-
-// Load dark mode preference
-window.addEventListener('DOMContentLoaded', () => {
-  const darkMode = localStorage.getItem('darkMode') === 'true';
-  if (darkMode) {
-    document.body.classList.add('dark-mode');
-    document.querySelector('.dark-mode-toggle').innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-  }
-});
-
-// Language Change
-function changeLanguage(lang) {
-  alert('Language changed to: ' + lang + '\n(Full implementation would load translated content)');
-}
-
-// Back to Top
-window.addEventListener('scroll', () => {
-  const backToTop = document.getElementById('backToTop');
-  if (window.pageYOffset > 300) {
-    backToTop.style.display = 'flex';
-  } else {
-    backToTop.style.display = 'none';
-  }
-});
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
-
-// Poll functionality
-document.querySelectorAll('.poll-option').forEach(option => {
-  option.addEventListener('click', function() {
-    document.querySelectorAll('.poll-option').forEach(opt => {
-      opt.style.background = '';
-      opt.querySelector('i').className = 'far fa-circle';
-    });
-    this.style.background = 'var(--primary-red)';
-    this.style.color = white;
-    this.querySelector('i').className = 'fas fa-check-circle';
-  });
-});
-</script>
 
 </body>
 </html>
