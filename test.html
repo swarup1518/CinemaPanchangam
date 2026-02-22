@@ -1225,6 +1225,31 @@ function moveSlider(direction) {
     </div>
   </div>
   
+  <!-- TRENDING SECTION -->
+  <div class="trending-section">
+    <div class="trending-header">
+      <i class="fas fa-fire"></i>
+      <h3>Trending Now</h3>
+    </div>
+    <div class="trending-tags">
+      <div class="tag">#Pushpa2Collections</div>
+      <div class="tag">#GameChangerUpdate</div>
+      <div class="tag">#DevaraOTT</div>
+      <div class="tag">#SalaarReview</div>
+      <div class="tag">#RRRSuccess</div>
+      <div class="tag">#BaahubaliRecords</div>
+      <div class="tag">#TollywoodNews</div>
+      <div class="tag">#AlluArjun</div>
+      <div class="tag">#RamCharan</div>
+      <div class="tag">#JrNTR</div>
+      <div class="tag">#MaheshBabu</div>
+      <div class="tag">#PrabhasNextMovie</div>
+      <div class="tag">#VijayDeverakonda</div>
+      <div class="tag">#RashmikaMandanna</div>
+      <div class="tag">#SamanthaLatest</div>
+    </div>
+  </div>
+  
   <!-- TOP GRID - FILM NEWS, REVIEWS, GALLERY -->
   <div class="grid-3">
 
@@ -1567,8 +1592,11 @@ function moveSlider(direction) {
   </div>
 
   <div class="actress-slider-container">
+    <div class="slider-arrow left" onclick="moveSlider('left')">
+      <i class="fas fa-chevron-left"></i>
+    </div>
     <div class="actress-slider">
-      <!-- First set of actresses -->
+      <!-- Actress slides -->
       <div class="actress-slide">
         <img src="images/actress1.jpg" alt="Samantha Ruth Prabhu">
         <div class="actress-name">Samantha Ruth Prabhu</div>
@@ -1609,47 +1637,93 @@ function moveSlider(direction) {
         <img src="images/actress10.jpeg" alt="Sreeleela">
         <div class="actress-name">Sreeleela</div>
       </div>
-      
-      <!-- Duplicate set for seamless loop -->
-      <div class="actress-slide">
-        <img src="images/actress1.jpg" alt="Samantha Ruth Prabhu">
-        <div class="actress-name">Samantha Ruth Prabhu</div>
+    </div>
+    <div class="slider-arrow right" onclick="moveSlider('right')">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
+
+  <!-- LATEST VIDEOS SECTION -->
+  <div class="full-width-section">
+    <h3 class="section-title">
+      <i class="fas fa-video"></i> LATEST VIDEOS
+      <span class="view-all">View All →</span>
+    </h3>
+    <div class="grid-5">
+      <div class="video-card">
+        <img src="images/Game Changer.jpg" alt="Video">
+        <div class="play-button"><i class="fas fa-play"></i></div>
+        <h4>Game Changer Trailer Launch Event</h4>
       </div>
-      <div class="actress-slide">
-        <img src="images/actress2.jpeg" alt="Rashmika Mandanna">
-        <div class="actress-name">Rashmika Mandanna</div>
+      <div class="video-card">
+        <img src="images/Pushpa 2.jpg" alt="Video">
+        <div class="play-button"><i class="fas fa-play"></i></div>
+        <h4>Pushpa 2 Behind The Scenes</h4>
       </div>
-      <div class="actress-slide">
-        <img src="images/actress3.jpg" alt="Pooja Hegde">
-        <div class="actress-name">Pooja Hegde</div>
+      <div class="video-card">
+        <img src="images/Devara.jpg" alt="Video">
+        <div class="play-button"><i class="fas fa-play"></i></div>
+        <h4>Devara Making Video</h4>
       </div>
-      <div class="actress-slide">
-        <img src="images/actress4.jpg" alt="Kajal Aggarwal">
-        <div class="actress-name">Kajal Aggarwal</div>
+      <div class="video-card">
+        <img src="images/Audio Launch Creates Sensation.jpg" alt="Video">
+        <div class="play-button"><i class="fas fa-play"></i></div>
+        <h4>Audio Launch Highlights</h4>
       </div>
-      <div class="actress-slide">
-        <img src="images/actress5.jpg" alt="Tamannaah Bhatia">
-        <div class="actress-name">Tamannaah Bhatia</div>
+      <div class="video-card">
+        <img src="images/New Movie Launch Event Photos.jpg" alt="Video">
+        <div class="play-button"><i class="fas fa-play"></i></div>
+        <h4>Movie Launch Event Coverage</h4>
       </div>
-      <div class="actress-slide">
-        <img src="images/actress6+.jpeg" alt="Shruti Haasan">
-        <div class="actress-name">Shruti Haasan</div>
+    </div>
+  </div>
+
+  <!-- PHOTO GALLERY SECTION -->
+  <div class="full-width-section">
+    <h3 class="section-title">
+      <i class="fas fa-images"></i> PHOTO GALLERY
+      <span class="view-all">View All →</span>
+    </h3>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/Priya Bhavani Shankar.jpg" alt="Gallery">
+        <div class="gallery-overlay">Priya Bhavani Shankar</div>
       </div>
-      <div class="actress-slide">
-        <img src="images/actress7.jpg" alt="Anushka Shetty">
-        <div class="actress-name">Anushka Shetty</div>
+      <div class="gallery-item">
+        <img src="images/Ritika Nayak Glamourous Collection.jpg" alt="Gallery">
+        <div class="gallery-overlay">Ritika Nayak</div>
       </div>
-      <div class="actress-slide">
-        <img src="images/actress8.jpg" alt="Keerthy Suresh">
-        <div class="actress-name">Keerthy Suresh</div>
+      <div class="gallery-item">
+        <img src="images/Divi Vadthya latest Stills.jpg" alt="Gallery">
+        <div class="gallery-overlay">Divi Vadthya</div>
       </div>
-      <div class="actress-slide">
-        <img src="images/actress9.jpeg" alt="Sai Pallavi">
-        <div class="actress-name">Sai Pallavi</div>
+      <div class="gallery-item">
+        <img src="images/New Poster of Toxic.jpg" alt="Gallery">
+        <div class="gallery-overlay">Toxic Poster</div>
       </div>
-      <div class="actress-slide">
-        <img src="images/actress10.jpeg" alt="Sreeleela">
-        <div class="actress-name">Sreeleela</div>
+      <div class="gallery-item">
+        <img src="images/First look posters of Viduthalai Part 2.jpg" alt="Gallery">
+        <div class="gallery-overlay">Viduthalai Part 2</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Nani in the raw new poster of The Paradise.jpg" alt="Gallery">
+        <div class="gallery-overlay">The Paradise</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/actress1.jpg" alt="Gallery">
+        <div class="gallery-overlay">Samantha Ruth Prabhu</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/actress2.jpeg" alt="Gallery">
+        <div class="gallery-overlay">Rashmika Mandanna</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/actress3.jpg" alt="Gallery">
+        <div class="gallery-overlay">Pooja Hegde</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/actress4.jpg" alt="Gallery">
+        <div class="gallery-overlay">Kajal Aggarwal</div>
       </div>
     </div>
   </div>
@@ -1812,9 +1886,163 @@ function moveSlider(direction) {
     </div>
   </div>
 
+  <!-- UPCOMING MOVIES SECTION -->
+  <div class="full-width-section">
+    <h3 class="section-title">
+      <i class="fas fa-calendar-alt"></i> UPCOMING MOVIES
+      <span class="view-all">View All →</span>
+    </h3>
+    <div class="grid-4">
+      <div class="card">
+        <img src="images/Game Changer.jpg" alt="Movie">
+        <div class="card-content">
+          <h3>Game Changer</h3>
+          <p>Action, Drama | Ram Charan</p>
+          <div class="card-meta">
+            <span><i class="far fa-calendar"></i> Mar 15, 2026</span>
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> Highly Anticipated</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/Pushpa 2.jpg" alt="Movie">
+        <div class="card-content">
+          <h3>Pushpa 2: The Rule</h3>
+          <p>Action, Thriller | Allu Arjun</p>
+          <div class="card-meta">
+            <span><i class="far fa-calendar"></i> Apr 10, 2026</span>
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> Blockbuster</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/Devara.jpg" alt="Movie">
+        <div class="card-content">
+          <h3>Devara</h3>
+          <p>Action, Drama | Jr NTR</p>
+          <div class="card-meta">
+            <span><i class="far fa-calendar"></i> May 5, 2026</span>
+            <span><i class="fas fa-fire" style="color: #FF6B6B;"></i> Most Awaited</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/New Movie Announcement.jpg" alt="Movie">
+        <div class="card-content">
+          <h3>Untitled Project</h3>
+          <p>Action | Prabhas</p>
+          <div class="card-meta">
+            <span><i class="far fa-calendar"></i> Jun 20, 2026</span>
+            <span><i class="fas fa-bolt" style="color: #FFD700;"></i> Mega Budget</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OTT RELEASES SECTION -->
+  <div class="full-width-section">
+    <h3 class="section-title">
+      <i class="fas fa-tv"></i> LATEST OTT RELEASES
+      <span class="view-all">View All →</span>
+    </h3>
+    <div class="grid-4">
+      <div class="card">
+        <img src="images/Hey Bhagawan.png" alt="OTT">
+        <div class="card-content">
+          <h3>Hey Balwanth</h3>
+          <p>Now Streaming on Netflix</p>
+          <div class="card-meta">
+            <span><i class="fas fa-play-circle"></i> Watch Now</span>
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.5/5</span>
+          </div>
+          <a href="#" class="btn btn-red" style="width: 100%; text-align: center; margin-top: 10px;">
+            <i class="fas fa-play"></i> Stream Now
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/Couple Friendly.png" alt="OTT">
+        <div class="card-content">
+          <h3>Couple Friendly</h3>
+          <p>Now Streaming on Amazon Prime</p>
+          <div class="card-meta">
+            <span><i class="fas fa-play-circle"></i> Watch Now</span>
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.8/5</span>
+          </div>
+          <a href="#" class="btn btn-red" style="width: 100%; text-align: center; margin-top: 10px;">
+            <i class="fas fa-play"></i> Stream Now
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/Euphoria.png" alt="OTT">
+        <div class="card-content">
+          <h3>Euphoria</h3>
+          <p>Now Streaming on Disney+ Hotstar</p>
+          <div class="card-meta">
+            <span><i class="fas fa-play-circle"></i> Watch Now</span>
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 3.5/5</span>
+          </div>
+          <a href="#" class="btn btn-red" style="width: 100%; text-align: center; margin-top: 10px;">
+            <i class="fas fa-play"></i> Stream Now
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/Nilave.png" alt="OTT">
+        <div class="card-content">
+          <h3>Nilave</h3>
+          <p>Now Streaming on Zee5</p>
+          <div class="card-meta">
+            <span><i class="fas fa-play-circle"></i> Watch Now</span>
+            <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.2/5</span>
+          </div>
+          <a href="#" class="btn btn-red" style="width: 100%; text-align: center; margin-top: 10px;">
+            <i class="fas fa-play"></i> Stream Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POLL SECTION -->
+  <div class="poll-section">
+    <h3 class="section-title">
+      <i class="fas fa-poll"></i> POLL OF THE WEEK
+    </h3>
+    <div class="poll-question">Which upcoming movie are you most excited about?</div>
+    <div class="poll-option">
+      <i class="far fa-circle"></i> Game Changer - Ram Charan
+    </div>
+    <div class="poll-option">
+      <i class="far fa-circle"></i> Pushpa 2 - Allu Arjun
+    </div>
+    <div class="poll-option">
+      <i class="far fa-circle"></i> Devara - Jr NTR
+    </div>
+    <div class="poll-option">
+      <i class="far fa-circle"></i> Prabhas Next - Untitled
+    </div>
+    <button class="btn btn-red" style="margin-top: 15px; width: 100%;">
+      <i class="fas fa-check"></i> Submit Vote
+    </button>
+  </div>
+
+  <!-- NEWSLETTER SECTION -->
+  <div class="newsletter">
+    <h3><i class="fas fa-envelope"></i> Subscribe to Our Newsletter</h3>
+    <p>Get the latest Telugu movie news, reviews, and updates delivered to your inbox!</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+    </form>
+  </div>
+
 </div>
 
 <!-- FOOTER -->
+
 <div class="footer">
   <div class="footer-top">
     <div class="footer-section">
