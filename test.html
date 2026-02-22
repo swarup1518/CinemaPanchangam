@@ -610,7 +610,7 @@ nav a:hover {
 
 .btn-outline {
   background: transparent;
-  color: var(--primary-red);
+  color: var (--primary-red);
   border: 2px solid var(--primary-red);
 }
 
@@ -1027,6 +1027,232 @@ nav a:hover {
     right: 10px;
 }
 
+/* CINEMA PANCHANGAM REVIEWS - YOUTUBE SECTION */
+.youtube-reviews-section {
+  background: #000000;
+  padding: 40px 0;
+  margin: 30px 0;
+}
+
+.youtube-reviews-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.youtube-reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--primary-red);
+}
+
+.youtube-reviews-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.youtube-reviews-title i {
+  color: var(--primary-red);
+  font-size: 28px;
+}
+
+.youtube-read-more {
+  color: var(--primary-red);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.youtube-read-more:hover {
+  color: #FFD700;
+  transform: translateX(5px);
+}
+
+.youtube-videos-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.youtube-featured-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.youtube-small-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.youtube-video-item {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.youtube-video-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(227, 30, 36, 0.4);
+  border-color: var(--primary-red);
+}
+
+.youtube-video-thumbnail {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.youtube-featured-row .youtube-video-thumbnail {
+  height: 280px;
+}
+
+.youtube-small-row .youtube-video-thumbnail {
+  height: 140px;
+}
+
+.youtube-video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.youtube-video-item:hover .youtube-video-thumbnail img {
+  transform: scale(1.1);
+}
+
+.youtube-play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(227, 30, 36, 0.95);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.youtube-small-row .youtube-play-overlay {
+  width: 45px;
+  height: 45px;
+}
+
+.youtube-video-item:hover .youtube-play-overlay {
+  transform: translate(-50%, -50%) scale(1.2);
+  background: var(--primary-red);
+}
+
+.youtube-play-overlay i {
+  color: white;
+  font-size: 24px;
+  margin-left: 3px;
+}
+
+.youtube-small-row .youtube-play-overlay i {
+  font-size: 18px;
+}
+
+.youtube-video-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.youtube-small-row .youtube-video-badge {
+  font-size: 9px;
+  padding: 3px 6px;
+  bottom: 5px;
+  right: 5px;
+}
+
+.youtube-video-info {
+  padding: 15px;
+  background: #1a1a1a;
+}
+
+.youtube-small-row .youtube-video-info {
+  padding: 10px;
+}
+
+.youtube-video-title {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 40px;
+}
+
+.youtube-small-row .youtube-video-title {
+  font-size: 12px;
+  -webkit-line-clamp: 2;
+  min-height: 34px;
+  margin-bottom: 6px;
+}
+
+.youtube-video-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+  font-size: 11px;
+}
+
+.youtube-small-row .youtube-video-meta {
+  font-size: 10px;
+}
+
+.youtube-video-views,
+.youtube-video-date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.youtube-small-row .youtube-video-views,
+.youtube-small-row .youtube-video-date {
+  gap: 3px;
+}
+
+.youtube-video-views i,
+.youtube-video-date i {
+  color: var(--primary-red);
+}
+
 @media(max-width:768px){
     .grid-3, .grid-4, .grid-5 {
         grid-template-columns: 1fr;
@@ -1057,6 +1283,15 @@ nav a:hover {
     .top-bar {
         flex-direction: column;
         gap: 10px;
+    }
+    .youtube-featured-row,
+    .youtube-small-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .youtube-featured-row .youtube-video-thumbnail,
+    .youtube-small-row .youtube-video-thumbnail {
+        height: 200px;
     }
 }
 </style>
@@ -1642,6 +1877,197 @@ function moveSlider(direction) {
       <i class="fas fa-chevron-right"></i>
     </div>
   </div>
+
+  <!-- CINEMA PANCHANGAM REVIEWS - YOUTUBE SECTION -->
+  <section class="youtube-reviews-section">
+    <div class="youtube-reviews-container">
+      <div class="youtube-reviews-header">
+        <h2 class="youtube-reviews-title">
+          <i class="fab fa-youtube"></i>
+          CINEMA PANCHANGAM REVIEWS
+        </h2>
+        <a href="https://www.youtube.com/@CinemaPanchangam" target="_blank" class="youtube-read-more">
+          READ MORE <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="youtube-videos-wrapper">
+        <div class="youtube-featured-row">
+          <!-- Featured Video 1 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Hey Bhagawan.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">TRAILER</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Emotional 'Daughter of Prasad Rao' trailer</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>28K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>2 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Video 2 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Couple Friendly.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">TEASER</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Sri Vishnu.. Vishnu Vinyasa teaser</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>45K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>3 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="youtube-small-row">
+          <!-- Small Video 1 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Euphoria.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">STORY</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">The trailer of 'The Karma' Story 2' is interesting</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>32K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>4 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Video 2 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Nilave.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">SONG</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Chinna Arjun.. Jango song on Shivaratri.. Shivangi.. Om Bheem</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>52K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>5 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Video 3 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Funky.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">TRAILER</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Om Bash Bhashi Song.. If Shankar.. Shivangi.. Om Bheem</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>38K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>6 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Video 4 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Withlove review.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">REVIEW</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Vijayawada Varasatham - If Mahidhar of teaser is in this trailer</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>41K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Video 5 -->
+          <div class="youtube-video-item" onclick="window.open('https://www.youtube.com/@CinemaPanchangam', '_blank')">
+            <div class="youtube-video-thumbnail">
+              <img src="images/Honey.png" alt="Movie Review">
+              <div class="youtube-play-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="youtube-video-badge">GLIMPSE</div>
+            </div>
+            <div class="youtube-video-info">
+              <div class="youtube-video-title">Valentine's Day- Vijay Naresh's second glimpse of 'Naresh'</div>
+              <div class="youtube-video-meta">
+                <div class="youtube-video-views">
+                  <i class="fas fa-eye"></i>
+                  <span>35K</span>
+                </div>
+                <div class="youtube-video-date">
+                  <i class="fas fa-calendar"></i>
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST VIDEOS SECTION -->
 
   <!-- LATEST VIDEOS SECTION -->
   <div class="full-width-section">
